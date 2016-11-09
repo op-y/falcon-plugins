@@ -1,5 +1,4 @@
 {
-    "agentApi": "http://127.0.0.1:1988/v1/push",
     "endpoint": "xxx.xxx.xxx",
     "step":60,
     "counterType":"GAUGE",

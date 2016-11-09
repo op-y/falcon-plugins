@@ -10,7 +10,6 @@ class RequestPatrol:
         self.config_file = config_file
         with open(self.config_file) as file:
             config = json.load(file)
-            self.agentApi = config['agentApi']
             self.endpoint = config['endpoint']
             self.step = config['step']
             self.counterType = config['counterType']
@@ -67,7 +66,7 @@ class RequestPatrol:
                     'counterType': counterType,
                     'tags': tags
                 }]
-        r = requests.post(self.agentApi, data=json.dumps(point))
+        print(json.dumps(point))
 
 if __name__ == '__main__':
     patrol = RequestPatrol('request_patrol.json')
