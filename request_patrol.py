@@ -36,20 +36,23 @@ class RequestPatrol:
             else:pass
     
     def CheckHttp(self, type, url, ping="", pong=""):
-        response = requests.post(url)
-        if type == "status":
-            code = response.status_code
-            if code == 200:
-                return 1
+        try:
+            response = requests.post(url)
+            if type == "status":
+                code = response.status_code
+                if code == 200:
+                    return 1
+                else:
+                    return 0
+            elif type == "semanteme":
+                content = response.text
+                if pong in content:
+                    return 1
+                else:
+                    return 0
             else:
-                return 0
-        elif type == "semanteme":
-            content = response.text
-            if pong in content:
-                return 1
-            else:
-                return 0
-        else:
+                return -1
+        except:
             return -1
 
     def CheckTcp(self, type, ip, port, ping="", pong=""):pass
