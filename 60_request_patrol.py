@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 #-*- coding:utf-8 -*-
 
+import os
 import json
 import time
 import requests
@@ -71,6 +72,7 @@ class RequestPatrol:
                 }]
         print(json.dumps(point))
 
-if __name__ == '__main__':
-    patrol = RequestPatrol('request_patrol.json')
-    patrol.HandleRequest();
+path = os.path.split(os.path.realpath(__file__))[0]
+cfg = path+"/request_patrol.json"
+patrol = RequestPatrol(cfg)
+patrol.HandleRequest();
