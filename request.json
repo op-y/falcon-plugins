@@ -1,0 +1,22 @@
+{
+    "endpoint": "api.mendianbao.sj",
+    "step":60,
+    "counterType":"GAUGE",
+    "tags":"company=duolaidian,department=dev,product=mendianbao",
+    "request":[
+        {
+            "metric":"api1.http.health",
+            "protocol":"http",
+            "type":"status",
+            "url":"http://127.0.0.1:8091/demo",
+            "method":"get"
+        },
+        {
+            "metric":"api2.http.health",
+            "protocol":"http",
+            "type":"status",
+            "url":"http://127.0.0.1:8092/demo",
+            "method":"get"
+        }
+    ]
+}
