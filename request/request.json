@@ -1,22 +1,23 @@
 {
-    "endpoint": "api.mendianbao.sj",
+    "endpoint": "localhost",
     "step":60,
     "counterType":"GAUGE",
-    "tags":"company=duolaidian,department=dev,product=mendianbao",
+    "tags":"product=prod",
     "request":[
         {
-            "metric":"api1.http.health",
-            "protocol":"http",
-            "type":"status",
-            "url":"http://127.0.0.1:8091/demo",
-            "method":"get"
+            "metric":"prod.basic",
+            "protocol":"grpc",
+            "ip":"127.0.0.1",
+            "port":"6566",
+            "judgement":"status"
         },
         {
-            "metric":"api2.http.health",
+            "metric":"prod.api",
             "protocol":"http",
-            "type":"status",
-            "url":"http://127.0.0.1:8092/demo",
-            "method":"get"
+            "url":"http://127.0.0.1:8080/health",
+            "method":"GET",
+            "judgement":"semanteme",
+            "keyword":"DOWN"
         }
     ]
 }

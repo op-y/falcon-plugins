@@ -1,0 +1,10 @@
+redis: "127.0.0.1:6379"
+path: "/path/to/log"
+delimiter: "\n"
+inotify: false
+selfCheck: true
+agent: "http://127.0.0.1:1988/v1/push"
+endpoint: "endpoint.name"
+tags: "tag1=t1,tag2=t2"
+counterType: "GAUGE"
+step: 60
