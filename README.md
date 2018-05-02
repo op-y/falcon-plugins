@@ -11,3 +11,4 @@
 - order-count: MySQL 数据定时查询上报脚本
 - proc-kiiler: 业务CPU使用率监控和停止脚本
 - request: Python实现对业务HTTP 健康检查脚本
+- zkmon: ZooKeeper 健康检查脚本
