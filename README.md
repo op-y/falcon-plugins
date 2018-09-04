@@ -7,6 +7,7 @@
 - keepalived: Keepalived 对业务模块健康状况监控脚本
 - logstash-conf: logstash MySQL慢查询配置
 - msgget-monitor: nginx 日志请求和ID监控
+- mysqlmon: mysql 端口探活监控
 - oom-checker: Java业务模块OOM日志监控重启脚本
 - order-count: MySQL 数据定时查询上报脚本
 - proc-kiiler: 业务CPU使用率监控和停止脚本
