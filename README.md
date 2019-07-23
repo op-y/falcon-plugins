@@ -14,3 +14,4 @@
 - request: Python实现对业务HTTP 健康检查脚本
 - zkmon: ZooKeeper 健康检查脚本
 - canal-monitor: Canal Server同步状态监控
+- redismon: redis状态监控

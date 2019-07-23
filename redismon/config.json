@@ -1,0 +1,10 @@
+{
+   "lepus": "username:password@tcp(127.0.0.1:3306)/lepus?charset=utf8&parseTime=True&loc=Local",
+   "manager": "username:password(127.0.0.1:3306)/db_manager?charset=utf8&parseTime=True&loc=Local",
+   "timeout": 10,
+    "falcon": {
+        "api":"http://127.0.0.1:1988/v1/push",
+        "endpoint": "redismon",
+        "step": 60
+    }
+}
